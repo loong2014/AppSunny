@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">SunnyPlayer</string>
+
+    <!--exit app -->
+    <string name="exit_app_tip">真的要退出应用么？</string>
+    <string name="btn_confirm">确认</string>
+    <string name="btn_cancel">取消</string>
+
+    <!--浮层容器——底部-->
+    <string name="lechild_bottom_to_open">前往开通</string>
+    <string name="lechild_bottom_open_later">稍后开通(%1$d)</string>
 </resources>

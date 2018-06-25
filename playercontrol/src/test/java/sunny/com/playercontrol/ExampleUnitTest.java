@@ -1,4 +1,4 @@
-package sunny.player;
+package sunny.com.playercontrol;
 
 import org.junit.Test;
 

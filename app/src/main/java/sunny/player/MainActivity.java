@@ -1,13 +1,29 @@
 package sunny.player;
 
-import android.support.v7.app.AppCompatActivity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+import sunny.player.base.BaseActivity;
+import sunny.player.exitapp.ExitAppTipActivity;
+
+public class MainActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.main_test).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                jumpExitAppPage();
+            }
+        });
+    }
+
+    private void jumpExitAppPage(){
+        Intent intent = new Intent(this, ExitAppTipActivity.class);
+        startActivity(intent);
     }
 }

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/bottom_floating_layer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <!--包含活动，小熊，手指的布局-->
+    <RelativeLayout
+        android:id="@+id/bottom_whole_layout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="106.67dp"
+        android:layout_marginRight="116.7dp"
+        android:visibility="visible">
+
+        <!--包含活动的布局-->
+        <RelativeLayout
+            android:id="@+id/bottom_activity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="103.3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="19.3dp"
+            android:background="@drawable/lechild_activity_bottom_bg">
+
+            <TextView
+                android:id="@+id/bottom_title_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="306dp"
+                android:layout_marginTop="16.7dp"
+                android:singleLine="true"
+                android:text="儿童节大放价"
+                android:textColor="#ff0000"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/bottom_title_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="16.7dp"
+                android:layout_marginLeft="306dp"
+                android:singleLine="true"
+                android:text="开通家庭会员立省399元"
+                android:textColor="#693303"
+                android:textSize="23sp"/>
+
+            <Button
+                android:id="@+id/bottom_confirm_btn"
+                android:layout_width="166.6dp"
+                android:layout_height="60dp"
+                android:layout_alignBottom="@+id/bottom_cancel_btn"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="26dp"
+                android:layout_toLeftOf="@+id/bottom_cancel_btn"
+                android:background="@drawable/lechild_activity_bottom_btn_confirm"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/lechild_bottom_to_open"
+                android:textColor="#693303"
+                android:textSize="20.7sp"/>
+
+            <Button
+                android:id="@+id/bottom_cancel_btn"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="19.3dp"
+                android:layout_marginRight="74.7dp"
+                android:background="@drawable/lechild_activity_bottom_btn_delay"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/lechild_bottom_open_later"
+                android:textColor="#693303"
+                android:textSize="20.7sp"/>
+
+        </RelativeLayout>
+
+        <!--手指布局-->
+        <ImageView
+            android:id="@+id/bottom_hand"
+            android:layout_width="56.7dp"
+            android:layout_height="58.67dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8.6dp"
+            android:layout_marginRight="255.3dp"
+            android:src="@drawable/lechild_activity_bottom_hand"/>
+
+        <!--动画结束后的小熊-->
+        <ImageView
+            android:id="@+id/bottom_bear"
+            android:layout_width="185.3dp"
+            android:layout_height="129.3dp"
+            android:layout_marginBottom="11.33dp"
+            android:layout_marginLeft="85.3dp"
+            android:src="@drawable/lechild_activity_bottom_bear"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bear_whole_layout"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="130dp">
+
+        <!--小熊——girl-->
+        <RelativeLayout
+            android:id="@+id/bottom_bear_girl_layout"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="-15dp">
+
+            <ImageView
+                android:id="@+id/bottom_bear_girl_body"
+                android:layout_width="255dp"
+                android:layout_height="172dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/lechild_activity_bottom_bearbody_girl"/>
+
+            <ImageView
+                android:id="@+id/bottom_bear_girl_head"
+                android:layout_width="252dp"
+                android:layout_height="181dp"
+                android:layout_above="@+id/bottom_bear_girl_body"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="-20dp"
+                android:src="@drawable/lechild_activity_bottom_bearhead_girl"/>
+
+        </RelativeLayout>
+
+        <!--小熊——boy-->
+        <RelativeLayout
+            android:id="@+id/bottom_bear_boy_layout"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="-15dp">
+
+            <ImageView
+                android:id="@+id/bottom_bear_boy_body"
+                android:layout_width="258dp"
+                android:layout_height="176dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/lechild_activity_bottom_bearbody_boy"/>
+
+            <ImageView
+                android:id="@+id/bottom_bear_boy_head"
+                android:layout_width="252dp"
+                android:layout_height="200dp"
+                android:layout_above="@+id/bottom_bear_boy_body"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="-25dp"
+                android:layout_marginRight="21dp"
+                android:src="@drawable/lechild_activity_bottom_bearhead_boy"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
